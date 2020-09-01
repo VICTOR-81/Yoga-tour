@@ -3,7 +3,7 @@
 *::before{
   box-sizing: border-box;
 }
-body,h1,h3{
+body,h1,h3,h4,p{
   margin: 0;
   padding: 0;
   font-family: 'Source Sans Pro', sans-serif;
@@ -381,4 +381,104 @@ padding-top: 14px;
 }
 .s5__slider-item3{
   background-image: url(../images/slide-6.jpg);
+}
+.s6-title{
+  margin-bottom: 70px;
+}
+p{
+  font-size: 20px;
+  margin-bottom: 23px;
+}
+.s6-program{
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 65px;
+  margin-bottom: 60px;
+}
+.s6-list{
+  max-width: 622px;
+}
+.s6-list_item{
+  margin-top: 30px;
+  padding-left: 160px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+}
+.s6-list_item::before{
+  content: "";
+  /* background-image: url(../images/s6-list_item-1.jpg); */
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: 0;
+}
+.s6-item_img-1::before{
+  background-image: url(../images/s6-list_item-1.jpg);
+}
+.s6-item_img-2::before{
+  background-image: url(../images/s6-list_item-2.jpg);
+}
+.s6-item_img-3::before{
+  background-image: url(../images/s6-list_item-3.jpg);
+}
+.s6-item_img-4::before{
+  background-image: url(../images/s6-list_item-4.jpg);
+}
+.s6-item_img-5::before{
+  background-image: url(../images/s6-list_item-5.jpg);
+}
+.s6-info{
+  display: flex;
+}
+.info-img{
+  width: 50%;
+}
+.info-center{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: left;
+}
+.s6-center{
+  font-size: 30px;
+  text-align: inherit;
+  line-height: 30px;
+  margin-bottom: 36px;
+  font-weight: 600;
+}
+.s6-center span{
+  font-size: 14px;
+  display: block;
+  font-weight: 400;
+}
+.s6-center_text{
+  font-size: 12px;
+  text-align: inherit;
+  margin-top: 19px;
+}
+.s6-center_list{
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.s6-center_list li{
+  padding-left: 28px;
+  position: relative;
+  width: 50%;
+}
+.s6-center_list li::before{
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-image: url(../images/s6-logo.png);
+  left: 0;
+  position: absolute;
 }
