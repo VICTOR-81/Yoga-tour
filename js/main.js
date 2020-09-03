@@ -7,6 +7,15 @@ $('.s3__slider,.s5__slider').slick({
   responsive:[{ breakpoint: 601, settings: { arrows: false } },]
 });
 
+$('.s8__slider').slick({
+  prevArrow: '<button type="button" class="slick__btn slick-prev">​<img src="images/prew.png" alt=""></button>',
+  nextArrow: '<button type="button" class="slick__btn slick-next">​<img src="images/next.png" alt=""></button>',
+  autoplay: true,
+  dots: true,
+  // fade: true,
+  responsive:[{ breakpoint: 601, settings: { arrows: false } },]
+});
+
 $(".menu").on("click","a", function (event) {
   //отменяем стандартную обработку нажатия по ссылке
   event.preventDefault();
