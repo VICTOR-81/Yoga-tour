@@ -3,7 +3,7 @@
 *::before{
   box-sizing: border-box;
 }
-body,h1,h3,h4,p{
+body,h1,h3,h4,h5,p{
   margin: 0;
   padding: 0;
   font-family: 'Source Sans Pro', sans-serif;
@@ -22,12 +22,13 @@ ul,li{
 }
 .container{
   max-width: 960px;
+  height: 100%;
   padding: 0 10px;
   margin: 0 auto;
 }
 .header{
   background-image: url(../images/header-fon.jpg);
-  /* height: 100vh; */
+  height: 100vh;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -35,10 +36,15 @@ ul,li{
   padding: 19px 0 21px;
   color: #ffffff;
 }
+.header__wrapper{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .header__inner{
   display: flex;
   flex-direction: column;
-
 }
 .header__top{
   display: flex;
@@ -202,7 +208,8 @@ padding-top: 14px;
 }
 .s2,
 .s6,
-.s8{
+.s8,
+.s10{
   background-color: #ffffff;
   padding: 80px 0;
 }
@@ -543,9 +550,11 @@ p{
 }
 .instructor-1{
   background-image: url(../images/s7-instructor1.jpg);
+  background-position: center;
 }
 .instructor-2{
   background-image: url(../images/s7-instructor2.jpg);
+  background-position: center;
 }
 .instructor-1+.instructor-2{
   margin-top: 19px;
@@ -640,4 +649,59 @@ p{
   font-style: italic;
   font-weight: 400;
   padding-top: 10px;
+}
+.s9{
+  padding: 80px 0;
+  background-color: #f8f2e4;
+}
+.s9-title{
+  margin-bottom: 10px;
+}
+.s9-inner{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.s9-inner__item{
+  max-width: 300px;
+  margin-top: 60px;
+  padding: 0 35px;
+}
+.s9-item__title{
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 38px;
+  margin-bottom: 15px;
+}
+.s9-item__text{
+  font-size: 16px;
+}
+.s10-title{
+  margin-bottom: 37px;
+}
+h5{
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 45px;
+}
+.s10__inner{
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.s10__inner-item{
+  width: 135px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.s10__item-img{
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.s10__inner-item a{
+  color: #ea7231;
+  border-bottom: 1px solid #ea7231;
+  line-height: 13px;
+}
+.arrow{
+  margin-top: 52px;
 }
